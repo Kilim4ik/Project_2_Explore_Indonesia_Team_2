@@ -1,3 +1,52 @@
 .footer {
   background: #010a20;
+  display: grid;
+}
+.cont {
+  display: grid;
+  position: relative;
+}
+.scroll-button {
+  position: absolute;
+  justify-self: center;
+  top: -41px;
+  &__item {
+    width: 104px;
+    height: 104px;
+  }
+}
+
+.footer-nav {
+  &__list {
+    display: grid;
+    justify-items: center;
+    gap: 36px;
+    // color: $white;
+    color: white;
+    padding: 96px 0 84px;
+  }
+}
+.site-logo {
+  width: 51px;
+  height: 51px;
+  margin-right: 10px;
+  &-cont {
+    display: flex;
+    align-items: center;
+    color: white;
+    // color: $white;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.social {
+  width: 186px;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width: 30px;
+    height: 30px;
+  }
 }
