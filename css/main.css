@@ -85,6 +85,7 @@ span {
 .carousel-image {
   width: 314px;
   height: 200px;
+  border-radius: 10px;
 }
 .carousel-control-next, .carousel-control-prev {
   width: 16px;
