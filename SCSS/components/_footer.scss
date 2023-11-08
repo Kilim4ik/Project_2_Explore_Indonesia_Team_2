@@ -21,8 +21,7 @@
     display: grid;
     justify-items: center;
     gap: 36px;
-    // color: $white;
-    color: white;
+    color: $text-color;
     padding: 96px 0 84px;
   }
 }
@@ -33,8 +32,7 @@
   &-cont {
     display: flex;
     align-items: center;
-    color: white;
-    // color: $white;
+    color: $text-color;
   }
   &__wrapper {
     display: flex;

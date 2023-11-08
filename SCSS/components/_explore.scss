@@ -6,6 +6,12 @@
 .explore {
   background-image: url("/src/img/explore-banner.jpg");
   background-size: 100% 2063px;
+  display: grid;
+  justify-items: center;
+  &__title {
+    color: $title-color;
+    margin: 0 auto;
+  }
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -25,10 +31,10 @@
   padding-top: 45px;
   display: grid;
   justify-content: center;
+  text-align: center;
   gap: 23px;
 }
 .carousel {
-  // width: 314px;
   display: flex;
   align-items: center;
   &-inner {
@@ -75,27 +81,32 @@
     transition: 0.5s;
   }
   &-indicators .active {
-    background-color: red;
+    background-color: $buttons;
     width: 50px;
     border-radius: 16px;
     transition: 0.5;
   }
 }
 .numbers {
-  margin-top: 695px;
+  width: 100%;
+  margin-top: 620px;
   padding: 72px 0 69px;
   opacity: 0.9;
   background: #020c21;
-  //   color: $white;
+  // color: $text-color;
   &__cont {
     padding: 0 30px 32px;
   }
   &__heading {
-    display: grid;
-    justify-items: center;
-    margin-bottom: 81px;
+    text-align: center;
+    width: 314px;
   }
+
   &__card {
+    width: 314px;
+
+    margin-top: 80px;
+    text-align: center;
     display: grid;
     justify-items: center;
   }

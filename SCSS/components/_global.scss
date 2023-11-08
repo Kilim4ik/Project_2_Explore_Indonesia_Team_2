@@ -1,9 +1,5 @@
-$buttons: #DD2242;
-$text-color:#6F7787;
-
-
-
 h1 {
+  color: #fff;
   font-family: Roboto;
   font-size: 58px;
   font-weight: 900;
@@ -11,28 +7,32 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-family: DM Sans;
+  color: #fff;
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 46px;
 }
 h3 {
-  font-family: DM Sans;
+  color: #fff;
+
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 150%;
 }
 p {
-  font-family: DM Sans;
+  color: #e0e0e0;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.5px;
 }
 span {
+  font-family: "Roboto", sans-serif;
   color: #dd2242;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
 }

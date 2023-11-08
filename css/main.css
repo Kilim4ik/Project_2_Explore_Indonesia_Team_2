@@ -1,3 +1,45 @@
+h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 63px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+h3 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+p {
+  color: #e0e0e0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  color: #dd2242;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
 .prev-icon,
 .next-icon {
   width: 16px;
@@ -7,6 +49,12 @@
 .explore {
   background-image: url("/src/img/explore-banner.jpg");
   background-size: 100% 2063px;
+  display: grid;
+  justify-items: center;
+}
+.explore__title {
+  color: #010a20;
+  margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -23,6 +71,7 @@
   padding-top: 45px;
   display: grid;
   justify-content: center;
+  text-align: center;
   gap: 23px;
 }
 
@@ -69,14 +118,15 @@
   transition: 0.5s;
 }
 .carousel-indicators .active {
-  background-color: red;
+  background-color: #dd2242;
   width: 50px;
   border-radius: 16px;
   transition: 0.5;
 }
 
 .numbers {
-  margin-top: 695px;
+  width: 100%;
+  margin-top: 620px;
   padding: 72px 0 69px;
   opacity: 0.9;
   background: #020c21;
@@ -85,11 +135,13 @@
   padding: 0 30px 32px;
 }
 .numbers__heading {
-  display: grid;
-  justify-items: center;
-  margin-bottom: 81px;
+  text-align: center;
+  width: 314px;
 }
 .numbers__card {
+  width: 314px;
+  margin-top: 80px;
+  text-align: center;
   display: grid;
   justify-items: center;
 }
@@ -118,7 +170,7 @@
   display: grid;
   justify-items: center;
   gap: 36px;
-  color: white;
+  color: #6f7787;
   padding: 96px 0 84px;
 }
 
@@ -130,7 +182,7 @@
 .site-logo-cont {
   display: flex;
   align-items: center;
-  color: white;
+  color: #6f7787;
 }
 .site-logo__wrapper {
   display: flex;
