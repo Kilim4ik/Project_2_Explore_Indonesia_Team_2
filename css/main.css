@@ -49,10 +49,13 @@ span {
 .explore {
   background-image: url("/src/img/explore-banner.jpg");
   background-size: 100% 2063px;
+  background-position: bottom;
   display: grid;
   justify-items: center;
 }
 .explore__title {
+  display: block;
+  width: 314px;
   color: #010a20;
   margin: 0 auto;
 }
@@ -68,7 +71,7 @@ span {
   }
 }
 .carousel-explore-section {
-  padding-top: 45px;
+  padding-top: 25px;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -93,7 +96,12 @@ span {
   border-radius: 50%;
   opacity: 1;
   position: inherit;
-  margin: 0px 9px;
+}
+.carousel-control-next {
+  margin-left: 9px;
+}
+.carousel-control-prev {
+  margin-right: 9px;
 }
 .carousel-indicators {
   top: 100%;
@@ -133,11 +141,16 @@ span {
   background: #020c21;
 }
 .numbers__cont {
+  display: grid;
+  justify-content: center;
   padding: 0 30px 32px;
 }
 .numbers__heading {
   text-align: center;
   width: 314px;
+}
+.numbers__heading-title {
+  margin-bottom: 57px;
 }
 .numbers__card {
   width: 314px;

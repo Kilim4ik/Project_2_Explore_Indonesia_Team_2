@@ -6,9 +6,12 @@
 .explore {
   background-image: url("/src/img/explore-banner.jpg");
   background-size: 100% 2063px;
+  background-position: bottom;
   display: grid;
   justify-items: center;
   &__title {
+    display: block;
+    width: 314px;
     color: $title-color;
     margin: 0 auto;
   }
@@ -28,7 +31,7 @@
   }
 }
 .carousel-explore-section {
-  padding-top: 45px;
+  padding-top: 25px;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -56,7 +59,12 @@
     border-radius: 50%;
     opacity: 1;
     position: inherit;
-    margin: 0px 9px;
+  }
+  &-control-next {
+    margin-left: 9px;
+  }
+  &-control-prev {
+    margin-right: 9px;
   }
   &-indicators {
     top: 100%;
@@ -96,11 +104,16 @@
   background: #020c21;
   // color: $text-color;
   &__cont {
+    display: grid;
+    justify-content: center;
     padding: 0 30px 32px;
   }
   &__heading {
     text-align: center;
     width: 314px;
+    &-title {
+      margin-bottom: 57px;
+    }
   }
 
   &__card {
