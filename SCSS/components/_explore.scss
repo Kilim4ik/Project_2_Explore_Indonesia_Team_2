@@ -104,9 +104,8 @@
   background: #020c21;
   // color: $text-color;
   &__cont {
-    display: grid;
-    justify-content: center;
-    padding: 0 30px 32px;
+    justify-items: center;
+    // padding: 0 30px 69px;
   }
   &__heading {
     text-align: center;
@@ -123,5 +122,58 @@
     text-align: center;
     display: grid;
     justify-items: center;
+  }
+}
+@media (min-width: 1170px) {
+  
+  .explore {
+    background-image: url("/src/img/explore-banner-desktop@.jpg");
+    &__title{
+      // display: block;
+      width: 615px;
+    }
+    .desktop-section {
+      display: grid;
+      justify-content: end;
+    }
+  }
+  .carousel-explore-section{
+    width: 1170px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore {
+      background-image: url("/src/img/explore-banner-desktop@x2.jpg");
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 286dpi),
+    (min-resolution: 3dppx) {
+    .explore {
+      background-image: url("/src/img/explore-banner-desktop@x3.jpg");
+    }
+  }
+
+  .carousel {
+    width: 1130px;
+    //   margin: 0 auto;
+  }
+  .numbers {
+    padding: 201px 0 220px;
+    &__heading {
+      width: 484px;
+      &-title {
+        margin-bottom: 36px;
+      }
+    }
+    &__card {
+      margin-top: 39px;
+      &-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
   }
 }

@@ -1,3 +1,9 @@
+.cont {
+  display: grid;
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 h1 {
   color: #fff;
   font-family: Roboto;
@@ -35,4 +41,21 @@ span {
   font-size: 40px;
   font-weight: 700;
   line-height: 46px;
+}
+picture {
+  width: 405px !important;
+}
+.desktop-section {
+  display: none;
+}
+@media (min-width: 1170px) {
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-section {
+    display: none !important;
+  }
 }
