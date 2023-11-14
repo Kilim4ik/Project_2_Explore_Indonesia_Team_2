@@ -332,10 +332,6 @@ picture {
     color: #6f7787;
     margin-right: 88px;
   }
-  .site-logo__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
   .site-logo__title, .site-logo__text {
     font-size: 23.961px;
     line-height: 90.5%;
