@@ -43,10 +43,7 @@
   &-inner {
     overflow: visible;
   }
-  &-item {
-    // display: flex;
-    // gap: 30px;
-  }
+
   &-image {
     width: 314px;
     height: 200px;
@@ -133,12 +130,12 @@
       width: 615px;
     }
     .desktop-section {
-      display: grid;
-      justify-content: end;
+      display: initial;
+
     }
   }
   .carousel-explore-section{
-    width: 1170px;
+    width: 1440px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -156,8 +153,10 @@
   }
 
   .carousel {
-    width: 1130px;
-    //   margin: 0 auto;
+
+    &-image{
+      max-width: 380px;
+    }
   }
   .numbers {
     padding: 201px 0 220px;
