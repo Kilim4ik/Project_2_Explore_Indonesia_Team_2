@@ -1,0 +1,31 @@
+.slick {
+  &-dots li.slick-active button:before {
+    width: 26px;
+    border-radius: 12px;
+    background: red;
+  }
+
+  &-dots li button:before {
+    opacity: 1;
+    background: grey;
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+
+  &-next:before {
+    content: url(/src/svg/next.svg);
+    font-size: 30px;
+    font-weight: bold;
+    color: #020b20;
+  }
+
+  &-prev:before {
+    content: url(/src/svg/prev.svg);
+    font-size: 30px;
+    font-weight: bold;
+    color: #020b20;
+  }
+}

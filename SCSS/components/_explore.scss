@@ -1,0 +1,178 @@
+.prev-icon,
+.next-icon {
+  width: 16px;
+  height: 19px;
+}
+.explore {
+  background-image: url("/src/img/explore-banner.jpg");
+  background-size: 100% 2063px;
+  background-position: bottom;
+  display: grid;
+  justify-items: center;
+  &__title {
+    display: block;
+    width: 314px;
+    color: $title-color;
+    margin: 0 auto;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .explore {
+    background-image: url("/src/img/explore-banner@x2.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 286dpi),
+  (min-resolution: 3dppx) {
+  .explore {
+    background-image: url("/src/img/explore-banner@x3.jpg");
+  }
+}
+.carousel-explore-section {
+  padding-top: 25px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 23px;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  &-inner {
+    overflow: visible;
+  }
+
+  &-image {
+    width: 314px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  &-control-next,
+  &-control-prev {
+    width: 16px;
+    height: 19px;
+    border-radius: 50%;
+    opacity: 1;
+    position: inherit;
+  }
+  &-control-next {
+    margin-left: 9px;
+  }
+  &-control-prev {
+    margin-right: 9px;
+  }
+  &-indicators {
+    top: 100%;
+    background-color: bisque;
+  }
+  &-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #85a3b2;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  &-indicators .active {
+    background-color: $buttons;
+    width: 50px;
+    border-radius: 16px;
+    transition: 0.5;
+  }
+}
+.numbers {
+  width: 100%;
+  margin-top: 620px;
+  padding: 72px 0 69px;
+  opacity: 0.9;
+  background: #020c21;
+  // color: $text-color;
+  &__cont {
+    justify-items: center;
+    // padding: 0 30px 69px;
+  }
+  &__heading {
+    text-align: center;
+    width: 314px;
+    &-title {
+      margin-bottom: 57px;
+    }
+  }
+
+  &__card {
+    width: 314px;
+
+    margin-top: 80px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+}
+@media (min-width: 1170px) {
+  
+  .explore {
+    background-image: url("/src/img/explore-banner-desktop@.jpg");
+    &__title{
+      // display: block;
+      width: 615px;
+    }
+    .desktop-section {
+      display: initial;
+
+    }
+  }
+  .carousel-explore-section{
+    width: 1440px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore {
+      background-image: url("/src/img/explore-banner-desktop@x2.jpg");
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 286dpi),
+    (min-resolution: 3dppx) {
+    .explore {
+      background-image: url("/src/img/explore-banner-desktop@x3.jpg");
+    }
+  }
+
+  .carousel {
+
+    &-image{
+      max-width: 380px;
+    }
+  }
+  .numbers {
+    padding: 201px 0 220px;
+    &__heading {
+      width: 484px;
+      &-title {
+        margin-bottom: 36px;
+      }
+    }
+    &__card {
+      margin-top: 39px;
+      &-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
