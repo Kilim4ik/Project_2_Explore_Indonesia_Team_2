@@ -1,0 +1,107 @@
+.main-block-video__subblock{margin: 0;}
+.main-block-video__subvideo{margin: 0;}
+.main-block-video__subvideoblock{margin: 0; display: block;}
+
+.main-block-video__description{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin-left: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    color: #FFF;
+}
+
+.main-block-video{
+    background-image: url(../src/img/bgimage-video-mobile.png);
+    background-color: #000000d2;
+    width: 375px;
+    height: 1451px;
+    background-repeat: no-repeat;  
+
+
+    &__title{
+        width: 314px;
+        line-height: 46px;
+        font-size: 40px;
+        padding-top: 83px;
+        margin-top: 0;
+    }
+
+    &__subtitle{
+        font-size: 22px;
+        line-height: 150%;
+    }
+
+    &__text{
+        width: 312px;
+        color: rgb(203, 203, 203);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    &__video{
+        width: 314px;
+        height: 176px;
+    }
+}
+
+@media (min-width: 376px){
+    .main-block-video__description{
+        margin-left: 30px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .main-block-video{
+        background-image: url(../src/img/bgimage-video.png);
+        width: 1930px;
+    
+    
+        &__title{
+            width: 1056px;
+            line-height: 50px;
+            font-size: 42px;
+            padding-top: 141px;
+            text-align: center;
+        }
+    
+        &__subtitle{
+            font-size: 18px;
+            padding-top: 10px;
+        }
+    
+        &__text{
+            width: 334px;
+            font-size: 18px;
+            line-height: 28px;
+            padding-top: 25px;
+            margin-bottom: 67px;
+        }
+        
+        &__video{
+            width: 1056px;
+            height: 594px;
+            margin-left: 442px;
+            margin-top: 67px;
+        }
+
+        &__subvideoblock{
+            display: flex;
+            margin-left: 285px;
+            padding-top: 125px;
+        }
+
+        &__subblock{
+            margin: 0;
+            margin-left: 42px;
+            margin-top: 60px;
+        }
+
+        &__subvideo{
+            margin: 0;
+            margin-left: 75px;
+        }
+    }
+}
